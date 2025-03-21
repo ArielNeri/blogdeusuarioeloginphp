@@ -27,18 +27,96 @@ $link_github = "https://github.com/ArielNeri";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Pedro Ariel Neri Barros Melo</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; background-color: #f8f8f8; }
-        .container { display: flex; align-items: flex-start; margin-bottom: 20px; }
-        .profile-img { width: 100px; height: 100px; margin-right: 20px; border-radius: 50%; overflow: hidden; }
-        .profile-img img { width: 100%; height: auto; }
-        h1, h2 { color: #333; }
-        .categories, .skills ul { font-weight: bold; }
-        ul { list-style-type: none; padding: 0; }
-        footer { text-align: center; margin-top: 20px; color: #666; }
-        .section { background: white; padding: 20px; margin-top: 10px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .skills ul { margin: 10px 0; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #34495E;
+            --background-color: #F3F4F6;
+            --card-background: #FFFFFF;
+            --text-color: #333;
+            --footer-text: #888;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary-color);
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            background: var(--card-background);
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories, .skills ul {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--footer-text);
+        }
+
+        .skills ul {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: var(--background-color);
+            border-radius: 8px;
+        }
+
+        .skills li {
+            margin: 5px 0;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
